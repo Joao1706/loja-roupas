@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minha Loja de Roupas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Minha Loja</h1>
+    <nav>
+      <a href="#">Início</a>
+      <a href="#">Produtos</a>
+      <a href="#">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Produtos em Destaque</h2>
+    <div class="produtos">
+      <!-- Produto 1 -->
+      <div class="produto">
+        <img src="https://via.placeholder.com/150" alt="Camiseta">
+        <h3>Camiseta Básica</h3>
+        <p>R$ 39,90</p>
+        <button onclick="adicionarAoCarrinho('Camiseta Básica', 39.90)">Adicionar</button>
+      </div>
+
+      <!-- Produto 2 -->
+      <div class="produto">
+        <img src="https://via.placeholder.com/150" alt="Calça">
+        <h3>Calça Jeans</h3>
+        <p>R$ 99,90</p>
+        <button onclick="adicionarAoCarrinho('Calça Jeans', 99.90)">Adicionar</button>
+      </div>
+    </div>
+
+    <h2>Carrinho</h2>
+    <ul id="carrinho"></ul>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Minha Loja. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
