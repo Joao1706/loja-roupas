@@ -1,163 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Minha Loja de Roupas</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <h1>Minha Loja</h1>
-    <nav>
-      <a href="#">Início</a>
-      <a href="#">Produtos</a>
-      <a href="#">Contato</a>
-    </nav>
-  </header>
-
-  <main>
-    <h2>Produtos em Destaque</h2>
-    <div class="produtos">
-      <!-- Produto 1 -->
-      <div class="produto">
-        <img src="https://via.placeholder.com/150" alt="Camiseta">
-        <h3>Camiseta Básica</h3>
-        <p>R$ 39,90</p>
-        <button onclick="adicionarAoCarrinho('Camiseta Básica', 39.90)">Adicionar</button>
-      </div>
-
-      <!-- Produto 2 -->
-      <div class="produto">
-        <img src="https://via.placeholder.com/150" alt="Calça">
-        <h3>Calça Jeans</h3>
-        <p>R$ 99,90</p>
-        <button onclick="adicionarAoCarrinho('Calça Jeans', 99.90)">Adicionar</button>
-      </div>
-    </div>
-
-    <h2>Carrinho</h2>
-    <ul id="carrinho"></ul>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Minha Loja. Todos os direitos reservados.</p>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TrendWear</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
-    }
-    header {
-      background-color: #1f1f1f;
-      color: white;
-      padding: 1rem 0;
-      text-align: center;
-    }
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-    }
-    .produtos {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      flex-wrap: wrap;
-      padding: 40px 20px;
-    }
-    .produto {
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      padding: 20px;
-      width: 220px;
-      text-align: center;
-    }
-    .produto img {
-      max-width: 100%;
-      border-radius: 8px;
-    }
-    .produto h3 {
-      margin: 15px 0 5px;
-    }
-    .produto p {
-      font-weight: bold;
-      color: #27ae60;
-    }
-    button {
-      background-color: #27ae60;
-      color: white;
-      border: none;
-      padding: 10px 16px;
-      margin-top: 10px;
-      border-radius: 8px;
-      cursor: pointer;
-    }
-    footer {
-      background-color: #1f1f1f;
-      color: white;
-      text-align: center;
-      padding: 20px 0;
-      margin-top: 30px;
-    }
-  </style>
-</head>
-<body>
-
-  <header>
-    <h1>TrendWear</h1>
-    <nav>
-      <a href="#">Início</a>
-      <a href="#">Produtos</a>
-      <a href="#">Contato</a>
-    </nav>
-  </header>
-
-  <section class="produtos">
-    <div class="produto">
-      <img src="camiseta.jpg" alt="Camiseta Básica">
-      <h3>Camiseta Básica</h3>
-      <p>R$ 39,90</p>
-      <button>Adicionar</button>
-    </div>
-    <div class="produto">
-      <img src="calca.jpg" alt="Calça Jeans">
-      <h3>Calça Jeans</h3>
-      <p>R$ 99,90</p>
-      <button>Adicionar</button>
-    </div>
-  </section>
-
-  <footer>
-    © 2025 TrendWear. Todos os direitos reservados.
-  </footer>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>TrendWear - Sua Loja de Estilo</title>
+  <title>TrendWear - Início</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #f4f4f4;
+      background-color: #f8f8f8;
     }
 
     header {
@@ -171,7 +22,7 @@
       background-color: #222;
       display: flex;
       justify-content: center;
-      padding: 10px 0;
+      padding: 10px;
     }
 
     nav a {
@@ -181,44 +32,18 @@
       font-weight: bold;
     }
 
-    .produtos {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      padding: 40px;
-    }
-
-    .produto {
-      background-color: white;
-      padding: 20px;
-      border-radius: 10px;
+    section {
+      padding: 40px 20px;
       text-align: center;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
 
-    .produto img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
+    .destaque {
+      background-color: white;
+      padding: 40px;
       border-radius: 10px;
-    }
-
-    .produto h3 {
-      margin: 15px 0 5px;
-    }
-
-    .produto p {
-      color: #444;
-      margin: 5px 0 15px;
-    }
-
-    .produto button {
-      background-color: #111;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 5px;
-      cursor: pointer;
+      margin: 0 auto;
+      max-width: 700px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
 
     footer {
@@ -228,54 +53,30 @@
       padding: 20px;
       margin-top: 40px;
     }
-
-    @media (max-width: 600px) {
-      nav {
-        flex-direction: column;
-        gap: 10px;
-      }
-    }
   </style>
 </head>
 <body>
   <header>
     <h1>TrendWear</h1>
-    <p>Estilo e conforto em breve na sua casa!</p>
+    <p>Sua nova experiência em moda começa aqui!</p>
   </header>
 
   <nav>
-    <a href="#">Home</a>
-    <a href="#">Produtos</a>
-    <a href="#">Contato</a>
-    <a href="#">Sobre</a>
+    <a href="index.html">Início</a>
+    <a href="produtos.html">Produtos</a>
+    <a href="contato.html">Contato</a>
   </nav>
 
-  <section class="produtos">
-    <div class="produto">
-      <img src="https://via.placeholder.com/300x200?text=Camisa+Premium" alt="Camisa Premium">
-      <h3>Camisa Premium</h3>
-      <p>R$ 99,90</p>
-      <button>Ver mais</button>
-    </div>
-
-    <div class="produto">
-      <img src="https://via.placeholder.com/300x200?text=Blusa+Estilosa" alt="Blusa Estilosa">
-      <h3>Blusa Estilosa</h3>
-      <p>R$ 119,90</p>
-      <button>Ver mais</button>
-    </div>
-
-    <div class="produto">
-      <img src="https://via.placeholder.com/300x200?text=Calça+Casual" alt="Calça Casual">
-      <h3>Calça Casual</h3>
-      <p>R$ 149,90</p>
-      <button>Ver mais</button>
+  <section>
+    <div class="destaque">
+      <h2>Bem-vindo à TrendWear!</h2>
+      <p>Estamos preparando uma seleção incrível de roupas que combinam estilo, conforto e preço justo.</p>
+      <p>Explore nossas coleções, conheça mais sobre nós e fique de olho nas novidades.</p>
     </div>
   </section>
 
   <footer>
     <p>© 2025 TrendWear | Todos os direitos reservados</p>
-    <p>Redes sociais: @trendwear (em breve)</p>
   </footer>
 </body>
 </html>
