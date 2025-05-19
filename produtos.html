@@ -2,123 +2,43 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>TrendWear - Produtos</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f8f8f8;
-    }
-
-    header {
-      background-color: #111;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-
-    nav {
-      background-color: #222;
-      display: flex;
-      justify-content: center;
-      padding: 10px;
-    }
-
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .produtos {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      padding: 40px;
-      max-width: 1100px;
-      margin: auto;
-    }
-
-    .card {
-      background-color: white;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      padding: 20px;
-      text-align: center;
-    }
-
-    .card img {
-      max-width: 100%;
-      border-radius: 8px;
-    }
-
-    .card h3 {
-      margin: 15px 0 10px;
-    }
-
-    .card p {
-      font-size: 0.95em;
-      color: #555;
-    }
-
-    .card button {
-      margin-top: 10px;
-      padding: 10px 20px;
-      background-color: #111;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    footer {
-      background-color: #111;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-    }
-  </style>
+  <title>Minha Loja - Produtos</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.css" />
 </head>
 <body>
   <header>
-    <h1>TrendWear</h1>
-    <p>Veja nossos produtos!</p>
+    <h1>Produtos</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="produtos.html">Produtos</a>
+      <a href="contato.html">Contato</a>
+      <button class="snipcart-checkout">🛒 Carrinho</button>
+    </nav>
   </header>
 
-  <nav>
-    <a href="index.html">Início</a>
-    <a href="produtos.html">Produtos</a>
-    <a href="contato.html">Contato</a>
-  </nav>
-
-  <section class="produtos">
-    <div class="card">
-      <img src="https://via.placeholder.com/250x250?text=Produto+1" alt="Produto 1">
-      <h3>Camisa Casual</h3>
-      <p>Estilo e conforto para seu dia a dia.</p>
-      <button>Comprar em breve</button>
-    </div>
-
-    <div class="card">
-      <img src="https://via.placeholder.com/250x250?text=Produto+2" alt="Produto 2">
-      <h3>Calça Jeans</h3>
-      <p>Perfeita para qualquer ocasião.</p>
-      <button>Comprar em breve</button>
-    </div>
-
-    <div class="card">
-      <img src="https://via.placeholder.com/250x250?text=Produto+3" alt="Produto 3">
-      <h3>Jaqueta Moderna</h3>
-      <p>Proteção com estilo urbano.</p>
-      <button>Comprar em breve</button>
-    </div>
-  </section>
+  <main>
+    <section class="produtos">
+      <div class="produto">
+        <h3>Produto 1</h3>
+        <p>Descrição breve do produto 1.</p>
+        <button
+          class="snipcart-add-item"
+          data-item-id="produto-1"
+          data-item-name="Produto 1"
+          data-item-price="49.90"
+          data-item-url="/produtos.html">
+          Adicionar ao carrinho
+        </button>
+      </div>
+    </section>
+  </main>
 
   <footer>
-    <p>© 2025 TrendWear | Todos os direitos reservados</p>
+    <p>&copy; 2025 Minha Loja</p>
   </footer>
+
+  <script async src="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.js"></script>
+  <div hidden id="snipcart" data-api-key="SUA_CHAVE_PUBLICA_AQUI" data-config-modal-style="side"></div>
 </body>
 </html>
