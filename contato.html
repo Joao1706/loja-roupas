@@ -2,105 +2,36 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>TrendWear - Contato</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f8f8f8;
-    }
-
-    header {
-      background-color: #111;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-
-    nav {
-      background-color: #222;
-      display: flex;
-      justify-content: center;
-      padding: 10px;
-    }
-
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .contato {
-      max-width: 600px;
-      margin: 40px auto;
-      background-color: white;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-
-    .contato h2 {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-
-    form {
-      display: flex;
-      flex-direction: column;
-    }
-
-    input, textarea {
-      margin-bottom: 15px;
-      padding: 12px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      font-size: 1em;
-    }
-
-    button {
-      background-color: #111;
-      color: white;
-      border: none;
-      padding: 12px;
-      border-radius: 5px;
-      cursor: pointer;
-      font-size: 1em;
-    }
-
-    footer {
-      background-color: #111;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-    }
-  </style>
+  <title>Minha Loja - Contato</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>TrendWear</h1>
-    <p>Fale com a gente</p>
+    <h1>Contato</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="produtos.html">Produtos</a>
+      <a href="contato.html">Contato</a>
+    </nav>
   </header>
 
-  <nav>
-    <a href="index.html">Início</a>
-    <a href="produtos.html">Produtos</a>
-    <a href="contato.html">Contato</a>
-  </nav>
+  <main>
+    <form action="#" method="post">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required />
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
 
-  <section class="contato">
-    <h2>Entre em Contato</h2>
-    <form>
-      <input type="text" placeholder="Seu nome" required>
-      <input type="email" placeholder="Seu e-mail" required>
-      <textarea rows="5" placeholder="Sua mensagem..." required></textarea>
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
       <button type="submit">Enviar</button>
     </form>
-  </section>
+  </main>
 
   <footer>
-    <p>© 2025 TrendWear | Todos os direitos reservados</p>
+    <p>&copy; 2025 Minha Loja</p>
   </footer>
-</body
+</body>
+</html>
