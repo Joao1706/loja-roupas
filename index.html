@@ -85,4 +85,37 @@
     <p style="text-align:center; margin-top: 40px;">&copy; 2025 Minha Loja</p>
   </footer>
 </body>
+<section class="hero">
+  <h1>Minha Loja</h1>
+</section><style>
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+}
+
+.hero h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px 40px;
+  font-size: 3em;
+  border-radius: 10px;
+}
+</style>
 </html>
