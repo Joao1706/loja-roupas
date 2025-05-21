@@ -2,12 +2,49 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Minha Loja - Início</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .hero {
+      background-image: url('https://source.unsplash.com/1600x500/?clothing,store');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+    .produtos-amostra {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 40px;
+    }
+    .produto {
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 1rem;
+      width: 250px;
+      text-align: center;
+    }
+    .produto img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Bem-vindo à Minha Loja!</h1>
     <nav>
       <a href="index.html">Início</a>
       <a href="produtos.html">Produtos</a>
@@ -15,15 +52,37 @@
     </nav>
   </header>
 
+  <section class="hero">
+    <h1>Minha Loja</h1>
+    <p>Estilo, conforto e qualidade em um só lugar.</p>
+  </section>
+
   <main>
-    <section>
-      <h2>Confira nossas novidades!</h2>
-      <p>Explore os melhores produtos com qualidade e preço acessível.</p>
+    <h2 style="text-align:center; margin-top: 40px;">Destaques da Semana</h2>
+    <section class="produtos-amostra">
+      <div class="produto">
+        <img src="https://source.unsplash.com/300x300/?tshirt" alt="Produto 1">
+        <h3>Camiseta Básica</h3>
+        <p>Conforto e estilo para o dia a dia.</p>
+        <p><strong>R$ 49,90</strong></p>
+      </div>
+      <div class="produto">
+        <img src="https://source.unsplash.com/300x300/?jeans" alt="Produto 2">
+        <h3>Calça Jeans Slim</h3>
+        <p>Modelagem moderna e confortável.</p>
+        <p><strong>R$ 119,90</strong></p>
+      </div>
+      <div class="produto">
+        <img src="https://source.unsplash.com/300x300/?jacket" alt="Produto 3">
+        <h3>Jaqueta Estilosa</h3>
+        <p>Ideal para dias mais frios com elegância.</p>
+        <p><strong>R$ 159,90</strong></p>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Minha Loja</p>
+    <p style="text-align:center; margin-top: 40px;">&copy; 2025 Minha Loja</p>
   </footer>
 </body>
 </html>
